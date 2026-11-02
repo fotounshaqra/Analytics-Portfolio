@@ -396,7 +396,7 @@ function App() {
               <h2>Let's create something<br /><span>meaningful with data.</span></h2>
               <p className="contact-description">
                 {profile.tagline} Feel free to connect with me
-                for professional opportunities and collaboration.
+                for professional discussions and collaboration.
               </p>
 
               <a href={`mailto:${profile.email}`} className="button button-primary">
