@@ -132,6 +132,15 @@ const isArabic = language === "ar";
     )}
   </button>
 
+  <button
+  className="language-toggle"
+  onClick={() => setLanguage(isArabic ? "en" : "ar")}
+  aria-label="Switch language"
+  title="Switch language"
+>
+  {isArabic ? "English" : "العربية"}
+</button>
+
 </header>
 
       <main>
