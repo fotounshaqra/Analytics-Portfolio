@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 import {
-  profile, skills, projects, credentials,
+  profile, skills, projects, publications,credentials,
   experience, education
 } from "./data/portfolio";
 
@@ -196,7 +196,7 @@ function App() {
         {/* ABOUT */}
         <section className="section page-width" id="about">
           <SectionHeading
-            number="01"
+            number="1"
             title="About Me"
             description="A little introduction to my interests, background, and journey in data analytics."
           />
@@ -224,7 +224,7 @@ function App() {
         <section className="section section-tinted" id="skills">
           <div className="page-width">
             <SectionHeading
-              number="02"
+              number="2"
               title="Technical Skills"
               description="The tools and technologies I use and continue to develop."
             />
@@ -250,7 +250,7 @@ function App() {
         {/* PROJECTS */}
         <section className="section page-width" id="projects">
           <SectionHeading
-            number="03"
+            number="3"
             title="Selected Projects"
             description="A selection of analytical work, dashboards, and projects demonstrating my approach to data."
           />
@@ -294,12 +294,60 @@ function App() {
           </div>
         </section>
 
-        {/* EXPERIENCE AND EDUCATION */}
+
+{/* PUBLICATIONS */}
+<section className="section section-tinted" id="publications">
+  <div className="page-width">
+    <SectionHeading
+      number="4"
+      title="Publications"
+      description="Research and academic contributions."
+    />
+
+    <div className="publications-list">
+      {publications.map((publication) => (
+        <Reveal key={publication.number}>
+          <article className="publication-row">
+            <span className="project-number">
+              {publication.number}
+            </span>
+
+            <div className="publication-content">
+              <p className="eyebrow">
+                {publication.organization} · {publication.year}
+              </p>
+
+              <h3>{publication.title}</h3>
+
+              <p>{publication.description}</p>
+
+              <a
+                href={publication.link}
+                target="_blank"
+                rel="noreferrer"
+                className="text-link"
+              >
+                Read Publication <ExternalLink size={15} />
+              </a>
+            </div>
+
+            <div className="project-symbol">
+              <Award size={38} />
+            </div>
+          </article>
+        </Reveal>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
 {/* EXPERIENCE */}
 <section className="section section-tinted" id="experience">
   <div className="page-width">
     <SectionHeading
-      number="04"
+      number="5"
       title="Professional Experience"
       description="My professional journey and hands-on experience."
     />
@@ -333,7 +381,7 @@ function App() {
   {/* EDUCATION */}
 <section className="section page-width" id="education">
   <SectionHeading
-    number="05"
+    number="6"
     title="Education"
     description="My academic background and continued learning journey."
   />
@@ -356,7 +404,7 @@ function App() {
         {/* CERTIFICATES AND ACHIEVEMENTS */}
         <section className="section page-width" id="certificates">
           <SectionHeading
-            number="06"
+            number="7"
             title="Certificates & Achievements"
             description="A collection of professional learning milestones and achievements."
           />
