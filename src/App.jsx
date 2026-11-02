@@ -62,20 +62,33 @@ function SectionHeading({ number, title, description }) {
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-   // Dark and light mode
+
+  const [language, setLanguage] = useState("en");
+  const isArabic = language === "ar";
+
+ 
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("portfolio-theme") || "light";
   });
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+    document.documentElement.dir = isArabic ? "rtl" : "ltr";
+  }, [language, isArabic]);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("portfolio-theme", theme);
   }, [theme]);
 
+
   const toggleTheme = () => {
     setTheme((current) =>
       current === "light" ? "dark" : "light"
     );
+    const [language, setLanguage] = useState("en");
+
+const isArabic = language === "ar";
   };
 
   return (
