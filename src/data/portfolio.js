@@ -72,7 +72,7 @@ export const education = [
   },
   {
     period: "2024",
-    degree: "Bachelor's Degree in Statistics",
+    degree: "Bachelor of Science in Statistics",
     institution: "King Abdulaziz University",
     description: "Developed a strong foundation in statistics, data analysis, and occasional public speaking."
   }
@@ -108,6 +108,13 @@ export const credentials = [
   },
   {
     number: "02",
+    type: "Certification",
+    title: "Certified Data Management Professional",
+    organization: "DAMA International",
+    year: "2024",
+    file: ""
+  {
+    number: "03",
     type: "Vocational Programme",
     title: "Advanced AI & ML: Unsupervised Learning",
     organization: "University of Oxford",
