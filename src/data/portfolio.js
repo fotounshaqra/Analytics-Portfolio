@@ -103,6 +103,7 @@ export const projects = [
   }
 ];
 
+
 export const credentials = [
   {
     number: "01",
@@ -119,6 +120,7 @@ export const credentials = [
     organization: "DAMA International",
     year: "2024",
     file: ""
+  },
   {
     number: "03",
     type: "Vocational Programme",
@@ -128,6 +130,7 @@ export const credentials = [
     file: ""
   }
 ];
+
 
 export const publications = [
   {
