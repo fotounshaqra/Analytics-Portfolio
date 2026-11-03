@@ -23,12 +23,14 @@ import {
 
 const navItems = [
   ["01", "About", "#about"],
-  ["02", "Skills", "#skills"],
-  ["03", "Projects", "#projects"],
-  ["04", "Experience", "#experience"],
-  ["05", "Education", "#education"],
-  ["06", "Certificates", "#certificates"],
-  ["07", "Contact", "#contact"]
+  ["02", "Statistics", "#statistics"],
+  ["03", "Skills", "#skills"],
+  ["04", "Projects", "#projects"],
+  ["05", "Publications", "#publications"],
+  ["06", "Experience", "#experience"],
+  ["07", "Education", "#education"],
+  ["08", "Certificates", "#certificates"],
+  ["09", "Contact", "#contact"]
 ];
 
 function Reveal({ children, delay = 0 }) {
@@ -58,23 +60,17 @@ function SectionHeading({ number, title, description }) {
     </div>
   );
 }
-
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-
-
-  const [language, setLanguage] = useState("en");
-  const isArabic = language === "ar";
 
  
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("portfolio-theme") || "light";
   });
 
-  useEffect(() => {
-    document.documentElement.lang = language;
-    document.documentElement.dir = isArabic ? "rtl" : "ltr";
-  }, [language, isArabic]);
+  const toggleTheme = () => {
+    setTheme(currentTheme => currentTheme === "light" ? "dark" : "light");
+  };
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -82,14 +78,6 @@ function App() {
   }, [theme]);
 
 
-  const toggleTheme = () => {
-    setTheme((current) =>
-      current === "light" ? "dark" : "light"
-    );
-    const [language, setLanguage] = useState("en");
-
-const isArabic = language === "ar";
-  };
 
   return (
     <div>
@@ -131,16 +119,7 @@ const isArabic = language === "ar";
       <Sun size={19} />
     )}
   </button>
-
- <button
-  className="language-toggle"
-  onClick={() => setLanguage(isArabic ? "en" : "ar")}
-  aria-label="Switch language"
-  title="Switch language"
->
-  {isArabic ? "EN" : "ع"}
-</button>
-</header>
+  </header>
 
       <main>
         {/* HERO */}
@@ -160,7 +139,7 @@ const isArabic = language === "ar";
               <h2>{profile.title}</h2>
 
               <p className="hero-description">
-                {profile.introduction}
+                {profile.tagline}
               </p>
 
               <div className="hero-actions">
@@ -201,23 +180,16 @@ const isArabic = language === "ar";
 
           <div className="hero-aside">
             <div className="hero-mark">F<span>.</span></div>
-            <p>ANALYZE.</p>
-            <p>DISCOVER.</p>
-            <p className="accent-line">TRANSFORM.</p>
             <div className="hero-bottom">
               <span>BASED IN {profile.location.toUpperCase()}</span>
             </div>
           </div>
-
-          <a href="#about" className="scroll-indicator">
-            SCROLL TO EXPLORE <ArrowDown size={14} />
-          </a>
         </section>
 
         {/* ABOUT */}
         <section className="section page-width" id="about">
           <SectionHeading
-            number="1"
+            number="01"
             title="About Me"
             description="A little introduction to my interests, background, and journey in data analytics."
           />
@@ -241,37 +213,111 @@ const isArabic = language === "ar";
           </Reveal>
         </section>
 
-        {/* SKILLS */}
-        <section className="section section-tinted" id="skills">
-          <div className="page-width">
-            <SectionHeading
-              number="2"
-              title="Technical Skills"
-              description="The tools and technologies I use and continue to develop."
-            />
+        {/* STATISTICS */}
+<section className="section page-width" id="statistics">
+  <SectionHeading
+    number="02"
+    title="Statistics"
+    description="A snapshot of my work, projects, and achievements in data analytics."
+  />
 
-            <div className="skills-grid">
-              {skills.map((group, index) => (
-                <Reveal key={group.category} delay={index * 0.08}>
-                  <article className="skill-card">
-                    <span className="card-number">0{index + 1}</span>
-                    <h3>{group.category}</h3>
-                    <div className="skill-tags">
-                      {group.items.map(item => (
-                        <span key={item}>{item}</span>
-                      ))}
-                    </div>
-                  </article>
-                </Reveal>
-              ))}
-            </div>
+  <div className="kpi-grid">
+    <Reveal>
+      <article className="kpi-card">
+        <div className="kpi-anim">
+          <div className="icon-bars">
+            <span style={{ height: "38%" }}></span>
+            <span style={{ height: "62%" }}></span>
+            <span style={{ height: "48%" }}></span>
+            <span style={{ height: "80%" }}></span>
           </div>
-        </section>
+        </div>
+        <div className="kpi-value">3+</div>
+        <div className="kpi-label">End-to-End Projects Built</div>
+      </article>
+    </Reveal>
+
+    <Reveal delay={0.1}>
+      <article className="kpi-card">
+        <div className="kpi-anim">
+          <svg viewBox="0 0 44 44" width="44" height="44">
+            <circle cx="22" cy="22" r="16" fill="none"
+              stroke="rgba(77,184,255,.2)" strokeWidth="8" />
+            <circle cx="22" cy="22" r="16" fill="none"
+              stroke="#4db8ff" strokeWidth="8"
+              strokeDasharray="60 41"
+              transform="rotate(-90 22 22)">
+              <animate attributeName="stroke-dasharray"
+                values="60 41;40 61;60 41"
+                dur="3s" repeatCount="indefinite" />
+            </circle>
+          </svg>
+        </div>
+        <div className="kpi-value">5M+</div>
+        <div className="kpi-label">Rows Analyzed</div>
+      </article>
+    </Reveal>
+
+    <Reveal delay={0.2}>
+      <article className="kpi-card">
+        <div className="kpi-anim">
+          <svg viewBox="0 0 44 44" width="44" height="44">
+            <circle cx="22" cy="8" r="5" fill="none"
+              stroke="#34d399" strokeWidth="2">
+              <animate attributeName="r" values="5;7;5"
+                dur="2.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="8" cy="34" r="5" fill="none"
+              stroke="#34d399" strokeWidth="2" />
+            <circle cx="36" cy="34" r="5" fill="none"
+              stroke="#34d399" strokeWidth="2" />
+            <path d="M22 13 L8 29 M22 13 L36 29 M8 34 L36 34"
+              fill="none" stroke="#34d399" strokeWidth="1.5" />
+          </svg>
+        </div>
+        <div className="kpi-value">5+</div>
+        <div className="kpi-label">Data Pipelines</div>
+      </article>
+    </Reveal>
+
+    <Reveal delay={0.3}>
+      <article className="kpi-card">
+        <div className="kpi-anim">
+          <svg viewBox="0 0 44 44" width="44" height="44">
+            <circle cx="22" cy="22" r="17" fill="none"
+              stroke="rgba(244,114,182,.2)" strokeWidth="4" />
+            <circle cx="22" cy="22" r="17" fill="none"
+              stroke="#f472b6" strokeWidth="4"
+              strokeDasharray="101.5 107"
+              transform="rotate(-90 22 22)" />
+          </svg>
+        </div>
+        <div className="kpi-value">10+</div>
+       <div className="kpi-label">Dashboards built</div>
+      </article>
+    </Reveal>
+  </div>
+</section>
+
+       <div className="skills-grid">
+  {skills.map((group, index) => (
+    <article className="skill-card" key={group.category}>
+      <span className="card-number">0{index + 1}</span>
+      <h3>{group.category}</h3>
+
+      <div className="skill-tags">
+        {group.items.map(item => (
+          <span key={item}>{item}</span>
+        ))}
+      </div>
+    </article>
+  ))}
+</div>
 
         {/* PROJECTS */}
         <section className="section page-width" id="projects">
           <SectionHeading
-            number="3"
+            number="04"
             title="Selected Projects"
             description="A selection of analytical work, dashboards, and projects demonstrating my approach to data."
           />
@@ -320,7 +366,7 @@ const isArabic = language === "ar";
 <section className="section section-tinted" id="publications">
   <div className="page-width">
     <SectionHeading
-      number="4"
+      number="05"
       title="Publications"
       description="Research and academic contributions."
     />
@@ -368,7 +414,7 @@ const isArabic = language === "ar";
 <section className="section section-tinted" id="experience">
   <div className="page-width">
     <SectionHeading
-      number="5"
+      number="06"
       title="Professional Experience"
       description="My professional journey and hands-on experience."
     />
@@ -402,7 +448,7 @@ const isArabic = language === "ar";
   {/* EDUCATION */}
 <section className="section page-width" id="education">
   <SectionHeading
-    number="6"
+    number="07"
     title="Education"
     description="My academic background and continued learning journey."
   />
@@ -425,7 +471,7 @@ const isArabic = language === "ar";
         {/* CERTIFICATES AND ACHIEVEMENTS */}
         <section className="section page-width" id="certificates">
           <SectionHeading
-            number="7"
+            number="08"
             title="Certificates & Achievements"
             description="A collection of professional learning milestones and achievements."
           />
@@ -461,7 +507,7 @@ const isArabic = language === "ar";
         <section className="section contact-section" id="contact">
           <div className="page-width">
             <Reveal>
-              <p className="eyebrow">07 / GET IN TOUCH</p>
+              <p className="eyebrow">09 / GET IN TOUCH</p>
               <h2>Let's create something<br /><span>meaningful with data.</span></h2>
               <p className="contact-description">
                 {profile.tagline} Feel free to connect with me
