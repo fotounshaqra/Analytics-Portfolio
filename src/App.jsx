@@ -520,11 +520,11 @@ function App() {
           </div>
         </section>
 
-        {/* 08 CERTIFICATES */}
-        <section className="section page-width" id="certificates">
+        {/* 08 CERTIFICATion*/}
+        <section className="section page-width" id="certifications">
           <SectionHeading
             number="08"
-            title="Certificates & Achievements"
+            title="Certifications & Achievements"
             description="A collection of professional learning milestones and achievements."
           />
 
