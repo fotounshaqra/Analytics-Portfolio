@@ -1,12 +1,11 @@
 
-
 export const profile = {
   name: "Fotoun Shaqra",
   shortName: "Fotoun",
   title: "Data & Business Analyst",
 
   introduction:
-    " I turn numbers into stories, and stories into action thriving at the intersection of data, business, and communication where messy numbers, business requirements, and complex problems become clear insights that people can actually use.",
+    "I turn numbers into stories, and stories into action, thriving at the intersection of data, business, and communication, where messy numbers, business requirements, and complex problems become clear insights that people can actually use.",
 
   location: "Jeddah, Saudi Arabia",
 
@@ -24,7 +23,7 @@ export const profile = {
 
 export const skills = [
   {
-    category: "Programming ",
+    category: "Programming",
     items: ["Python", "R", "SQL"]
   },
   {
@@ -45,25 +44,24 @@ export const experience = [
   {
     period: "June 2025 - November 2025",
     title: "Junior Sales Analyst",
-    organization: "Beiersdorf",
+    organization: "Beiersdorf"
   },
-   {
+  {
     period: "September 2024 - February 2025",
     title: "Commercial Graduate Trainee",
-    organization: "L'Oreal",
+    organization: "L'Oreal"
   },
   {
     period: "February 2024 - July 2024",
     title: "Customer Business Development Intern (MT)",
-    organization: "Unilever",
+    organization: "Unilever"
   },
   {
     period: "Dec 2022 - Mar 2023",
     title: "Data Analysis Intern - Operations",
-    organization: "Panda Retail Company - Savola Group",
+    organization: "Panda Retail Company - Savola Group"
   }
 ];
-
 
 export const education = [
   {
@@ -76,7 +74,7 @@ export const education = [
     period: "2024",
     degree: "Bachelor's Degree in Statistics",
     institution: "King Abdulaziz University",
-    description: "Developed a strong foundation in statistics, data analysis, and occassional public speaking."
+    description: "Developed a strong foundation in statistics, data analysis, and occasional public speaking."
   }
 ];
 
@@ -94,25 +92,26 @@ export const projects = [
     title: "Restaurant Sales Dashboard",
     category: "Data Visualization",
     tools: ["Tableau"],
-    image: "https://public.tableau.com/app/profile/fotoun.shaqra/viz/LetsTacoboutSales/Dashboard1"
+    link: "https://public.tableau.com/app/profile/fotoun.shaqra/viz/LetsTacoboutSales/Dashboard1",
+    image: ""
   }
 ];
 
 export const credentials = [
   {
     number: "01",
-    type: "Publication",
-    title: "IEEE Research Publication",
-    organization: "IEEE",
-    year: "Add year",
+    type: "English Proficiency Test",
+    title: "IELTS Academic Band 8",
+    organization: "British Council",
+    year: "2018",
     file: ""
   },
   {
     number: "02",
-    type: "Achievement",
-    title: "Cybercraft (Cybersecurity for beginners)",
-    organization:"British Council",
-    year: "2018",
+    type: "Vocational Programme",
+    title: "Advanced AI & ML: Unsupervised Learning",
+    organization: "University of Oxford",
+    year: "2025",
     file: ""
   }
 ];
