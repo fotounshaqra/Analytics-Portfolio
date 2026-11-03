@@ -41,6 +41,12 @@ export const skills = [
 ];
 
 export const experience = [
+
+   {
+    period: "August 2026 - Present ",
+    title: "Commercial Excellence Analyst",
+    organization: "Confidential"
+  },
   {
     period: "June 2025 - November 2025",
     title: "Junior Sales Analyst",
