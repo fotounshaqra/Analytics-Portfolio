@@ -34,7 +34,7 @@ const navItems = [
   ["05", "Skills", "#skills"],
   ["06", "Projects", "#projects"],
   ["07", "Publications", "#publications"],
-  ["08", "Certificates", "#certificates"],
+  ["08", "Certifications", "#certifications"],
   ["09", "Contact", "#contact"]
 ];
 
