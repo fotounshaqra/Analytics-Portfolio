@@ -1,8 +1,9 @@
-
 export const profile = {
   name: "Fotoun Shaqra",
   shortName: "Fotoun",
   title: "Data & BI Analyst",
+
+  tagline: "Turning data into insights, and insights into impact.",
 
   introduction:
     "I turn numbers into stories, and stories into action, thriving at the intersection of data, business, and communication, where messy numbers, business requirements, and complex problems become clear insights that people can actually use.",
@@ -16,7 +17,7 @@ export const profile = {
   cv: "/cv.pdf",
 
   about:
-    "I can write a paragraph about myself and how I graduated with a BSc in Statistics from King Abdulaziz University and where the data has taken me so far and that I'm currently pursuing an MSc in AI; however, I'll keep it simple using Statistics
+    "I graduated with a BSc in Statistics from King Abdulaziz University, where I developed a strong foundation in statistical analysis and data-driven problem-solving. My academic and professional experiences have taken me across data analytics and business intelligence, and I am currently pursuing an Executive Master of Science in Artificial Intelligence at the University of Jeddah.",
 };
 
 export const skills = [
@@ -39,9 +40,8 @@ export const skills = [
 ];
 
 export const experience = [
-
-   {
-    period: "August 2026 - Present ",
+  {
+    period: "August 2026 - Present",
     title: "Commercial Excellence Analyst",
     organization: "Confidential"
   },
@@ -101,7 +101,6 @@ export const projects = [
   }
 ];
 
-
 export const credentials = [
   {
     number: "01",
@@ -128,7 +127,6 @@ export const credentials = [
     file: ""
   }
 ];
-
 
 export const publications = [
   {
