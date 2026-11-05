@@ -220,7 +220,7 @@ function App() {
         <section className="section section-tinted" id="experience">
           <div className="page-width">
             <SectionHeading
-              number="02"
+              number="03"
               title="Professional Experience"
               description="Where the data has taken me so far."
             />
@@ -255,7 +255,7 @@ function App() {
         {/* 03 STATISTICS */}
         <section className="section page-width" id="statistics">
           <SectionHeading
-            number="03"
+            number="02"
             title="Statistics"
             description="Brief statistics of my experience so far."
           />
