@@ -3,7 +3,7 @@ export const profile = {
   shortName: "Fotoun",
   title: "Data & BI Analyst",
 
-  tagline: "Turning data into insights, and insights into impact.",
+  tagline: "Turning data into decisions, and insights into impact.",
 
   introduction:
     "I turn numbers into stories, and stories into action, thriving at the intersection of data, business, and communication, where messy numbers, business requirements, and complex problems become clear insights that people can actually use.",
