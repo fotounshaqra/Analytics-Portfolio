@@ -28,8 +28,8 @@ import {
 
 const navItems = [
   ["01", "About", "#about"],
-  ["02", "Experience", "#experience"],
-  ["03", "Statistics", "#statistics"],
+  ["02", "Statistics", "#statistics"],
+  ["03", "Experience", "#experience"],
   ["04", "Education", "#education"],
   ["05", "Skills", "#skills"],
   ["06", "Projects", "#projects"],
@@ -194,7 +194,7 @@ function App() {
           <SectionHeading
             number="01"
             title="About Me"
-            description="A little introduction to my interests, background, and journey in data analytics."
+            description="A brief introduction to my interests, background, and journey in data analytics."
           />
 
           <Reveal>
@@ -222,7 +222,7 @@ function App() {
             <SectionHeading
               number="02"
               title="Professional Experience"
-              description="My professional journey and hands-on experience."
+              description="Where the data has taken me so far."
             />
 
             <div className="timeline">
@@ -431,7 +431,7 @@ function App() {
           <SectionHeading
             number="06"
             title="Selected Projects"
-            description="A selection of dashboards and projects demonstrating my approach to data. I enjoy numbers with graphs and colors to have a memorable impact. Datasets used in these are publicly available. Dashboards I've built on Power BI won't be displayed due to confidentiality."
+            description="A selection of dashboards and projects demonstrating my approach to data. I enjoy combining numbers with graphs and colors to have a memorable impact. Datasets used in these are publicly available. Dashboards I've built on Power BI won't be displayed due to confidentiality."
           />
 
           <div className="projects-list">
