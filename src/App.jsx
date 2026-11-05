@@ -180,9 +180,34 @@ function App() {
 
           <div className="hero-aside">
             <div className="hero-mark">F<span>.</span></div>
-            <div className="hero-bottom">
-              <span>BASED IN {profile.location.toUpperCase()}</span>
+            <div
+              className="hero-location"
+              style={{
+                marginTop: "1.25rem",
+                fontSize: "0.68rem",
+                letterSpacing: "0.16em",
+                fontWeight: 600,
+                textTransform: "uppercase",
+                textAlign: "center"
+              }}
+            >
+              BASED IN JEDDAH
             </div>
+            <p
+              className="hero-bridge"
+              style={{
+                maxWidth: "230px",
+                margin: "1.2rem auto 0",
+                fontFamily: 'Georgia, "Times New Roman", serif',
+                fontSize: "1.05rem",
+                fontStyle: "italic",
+                lineHeight: 1.5,
+                textAlign: "center",
+                opacity: 0.82
+              }}
+            >
+              Bridging the gap between academia and industry.
+            </p>
           </div>
         </section>
 
@@ -201,7 +226,58 @@ function App() {
                 <p>{profile.about}</p>
               </div>
 
+              <div className="about-highlight">
+                <span className="highlight-number">01</span>
+                <h3>Curiosity drives discovery.</h3>
+                <p>
+                  I believe meaningful insights begin with asking
+                  the right questions and understanding the data.
+                </p>
+              </div>
+            </div>
           </Reveal>
+
+          {/* Decorative line-chart motif leading into Statistics */}
+          <div
+            aria-hidden="true"
+            className="about-chart-motif"
+            style={{
+              width: "100%",
+              height: "112px",
+              marginTop: "3.5rem",
+              overflow: "hidden",
+              opacity: 0.42
+            }}
+          >
+            <svg
+              viewBox="0 0 1100 112"
+              preserveAspectRatio="none"
+              role="presentation"
+              style={{ width: "100%", height: "100%", display: "block" }}
+            >
+              <defs>
+                <linearGradient id="chartFade" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="var(--purple)" stopOpacity="0.22" />
+                  <stop offset="100%" stopColor="var(--purple)" stopOpacity="0" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M0 88 C75 84 95 70 150 76 S235 94 290 62 S380 73 430 48 S520 62 575 38 S665 53 720 29 S815 49 865 20 S965 40 1010 14 S1070 20 1100 8 L1100 112 L0 112 Z"
+                fill="url(#chartFade)"
+              />
+              <path
+                d="M0 88 C75 84 95 70 150 76 S235 94 290 62 S380 73 430 48 S520 62 575 38 S665 53 720 29 S815 49 865 20 S965 40 1010 14 S1070 20 1100 8"
+                fill="none"
+                stroke="var(--purple)"
+                strokeWidth="2"
+                vectorEffect="non-scaling-stroke"
+              />
+              <circle cx="290" cy="62" r="3.5" fill="var(--purple)" />
+              <circle cx="575" cy="38" r="3.5" fill="var(--purple)" />
+              <circle cx="865" cy="20" r="3.5" fill="var(--purple)" />
+              <circle cx="1010" cy="14" r="3.5" fill="var(--purple)" />
+            </svg>
+          </div>
         </section>
 
         {/* 02 STATISTICS */}
@@ -209,7 +285,7 @@ function App() {
           <SectionHeading
             number="02"
             title="Statistics"
-            description="My experience so far."
+            description="Brief statistics of my experience so far."
           />
 
           <div className="kpi-grid">
@@ -337,7 +413,7 @@ function App() {
             <SectionHeading
               number="03"
               title="Professional Experience"
-              description="Where the data has taken me."
+              description="Where the data has taken me so far."
             />
 
             <div className="timeline">
