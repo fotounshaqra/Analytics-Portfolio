@@ -1,6 +1,8 @@
 
 
 
+
+
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
@@ -216,43 +218,7 @@ function App() {
           </Reveal>
         </section>
 
-        {/* 02 EXPERIENCE */}
-        <section className="section section-tinted" id="experience">
-          <div className="page-width">
-            <SectionHeading
-              number="03"
-              title="Professional Experience"
-              description="Where the data has taken me so far."
-            />
-
-            <div className="timeline">
-              {experience.map((item, index) => (
-                <Reveal key={index}>
-                  <article className="timeline-item">
-                    <div className="experience-content">
-                      <div className="experience-text">
-                        <p className="eyebrow">{item.period}</p>
-                        <h3>{item.title}</h3>
-                        <p className="organization">{item.organization}</p>
-                        {item.description && <p>{item.description}</p>}
-                      </div>
-
-                      {item.logo && (
-                        <img
-                          src={item.logo}
-                          alt={`${item.organization} logo`}
-                          className="company-logo"
-                        />
-                      )}
-                    </div>
-                  </article>
-                </Reveal>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 03 STATISTICS */}
+        {/* 02 STATISTICS */}
         <section className="section page-width" id="statistics">
           <SectionHeading
             number="02"
@@ -376,6 +342,35 @@ function App() {
                 <div className="kpi-label">Dashboards Built</div>
               </article>
             </Reveal>
+          </div>
+        </section>
+
+        {/* 03 EXPERIENCE */}
+        <section className="section section-tinted" id="experience">
+          <div className="page-width">
+            <SectionHeading
+              number="03"
+              title="Professional Experience"
+              description="Where the data has taken me so far."
+            />
+
+            <div className="timeline">
+              {experience.map((item, index) => (
+                <Reveal key={index}>
+                  <article className="timeline-item">
+                    <div className="experience-content">
+                      <div className="experience-text">
+                        <p className="eyebrow">{item.period}</p>
+                        <h3>{item.title}</h3>
+                        <p className="organization">{item.organization}</p>
+                        {item.description && <p>{item.description}</p>}
+                      </div>
+
+                    </div>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </section>
 
