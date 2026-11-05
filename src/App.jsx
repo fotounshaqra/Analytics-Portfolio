@@ -201,15 +201,6 @@ function App() {
                 <p>{profile.about}</p>
               </div>
 
-              <div className="about-highlight">
-                <span className="highlight-number">01</span>
-                <h3>Curiosity drives discovery.</h3>
-                <p>
-                  I believe meaningful insights begin with asking
-                  the right questions and understanding the data.
-                </p>
-              </div>
-            </div>
           </Reveal>
         </section>
 
@@ -218,7 +209,7 @@ function App() {
           <SectionHeading
             number="02"
             title="Statistics"
-            description="Brief statistics of my experience so far."
+            description="My experience so far."
           />
 
           <div className="kpi-grid">
@@ -346,7 +337,7 @@ function App() {
             <SectionHeading
               number="03"
               title="Professional Experience"
-              description="Where the data has taken me so far."
+              description="Where the data has taken me."
             />
 
             <div className="timeline">
