@@ -17,7 +17,7 @@ export const profile = {
   cv: "/cv.pdf",
 
   about:
-    "I graduated with a BSc in Statistics from King Abdulaziz University, where I developed a strong foundation in statistical analysis and data-driven problem-solving. My academic and professional experiences have taken me across data analytics and business intelligence, and I am currently pursuing an Executive Master of Science in Artificial Intelligence at the University of Jeddah.",
+    "I can write a long paragraph about my experiences and education; as well as technologies and tools I've used and am using, but instead I'll use Statistics. ",
 };
 
 export const skills = [
