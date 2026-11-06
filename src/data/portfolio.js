@@ -17,7 +17,7 @@ export const profile = {
   cv: "/cv.pdf",
 
   about:
-    "I could write a long paragraph about my experiences, education, and the technologies and tools I've used along the way. Instead, I'll keep it simple using Statistics.",
+    "I could write a long paragraph about my experiences, education, and tech stack. Instead, I'll keep it simple using Statistics.",
 };
 
 export const skills = [
