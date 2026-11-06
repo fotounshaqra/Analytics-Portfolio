@@ -6,7 +6,7 @@ export const profile = {
   tagline: "Turning data into decisions, and insights into impact.",
 
   introduction:
-    "Problem solver and numbers geek, thriving at the intersection of data, business, and communication, where messy numbers and business requirements become clear insights that people can actually use.",
+    "Problem solver and numbers geek",
 
   location: "Jeddah, Saudi Arabia",
 
@@ -123,6 +123,14 @@ export const credentials = [
     type: "Vocational Programme",
     title: "Advanced AI & ML: Unsupervised Learning",
     organization: "University of Oxford",
+    year: "2025",
+    file: ""
+  },
+  
+  { number: "04",
+    type: "Certification",
+    title: "Azure AI Fundamentals",
+    organization: "Microsoft",
     year: "2025",
     file: ""
   }
