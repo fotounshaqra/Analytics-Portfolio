@@ -197,7 +197,6 @@ function App() {
           <SectionHeading
             number="01"
             title="About Me"
-            description="Brief Introduction."
           />
 
           <Reveal>
@@ -262,7 +261,7 @@ function App() {
           <SectionHeading
             number="02"
             title="Statistics"
-            description="Brief statistics of my experience so far."
+            description="My experience so far."
           />
 
           <div className="kpi-grid">
@@ -390,7 +389,7 @@ function App() {
             <SectionHeading
               number="03"
               title="Professional Experience"
-              description="Where the data has taken me so far."
+              description=" My data journey."
             />
 
             <div className="timeline">
@@ -441,7 +440,7 @@ function App() {
             <SectionHeading
               number="05"
               title="Technical Skills"
-              description="The tools and technologies I use and continue to develop."
+              description="The tools and technologies I use and learn about."
             />
 
             <div className="skills-grid">
@@ -517,7 +516,7 @@ function App() {
             <SectionHeading
               number="07"
               title="Publications"
-              description="Research and academic contributions."
+              description="Research contributions."
             />
 
             <div className="publications-list">
@@ -559,7 +558,7 @@ function App() {
           <SectionHeading
             number="08"
             title="Certifications & Achievements"
-            description="A collection of professional learning milestones and achievements."
+            description="Learning milestones and achievements."
           />
 
           <div className="credentials-list">
