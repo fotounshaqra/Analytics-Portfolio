@@ -207,7 +207,7 @@ function App() {
               </div>
 
               <div className="about-highlight">
-                <span className="highlight-number">01</span>
+                <span className="highlight-number"></span>
                 <h3>Bridging the gap between academia and industry.</h3>
               </div>
             </div>
@@ -389,7 +389,7 @@ function App() {
             <SectionHeading
               number="03"
               title="Professional Experience"
-              description=" My data journey."
+              description=" My data path."
             />
 
             <div className="timeline">
@@ -558,7 +558,7 @@ function App() {
           <SectionHeading
             number="08"
             title="Certifications & Achievements"
-            description="Learning milestones and achievements."
+            description="Learning milestones."
           />
 
           <div className="credentials-list">
