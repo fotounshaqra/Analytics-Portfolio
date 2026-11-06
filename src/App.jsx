@@ -179,22 +179,19 @@ function App() {
           </div>
 
           <div className="hero-aside">
-            <div className="hero-mark">F<span>.</span></div>
-            <div
-              className="hero-location"
-              style={{
-                marginTop: "1.25rem",
-                fontSize: "0.68rem",
-                letterSpacing: "0.16em",
-                fontWeight: 600,
-                textTransform: "uppercase",
-                textAlign: "center"
-              }}
-            >
-              BASED IN JEDDAH
-           
-        </section>
+  <div className="hero-mark">F<span>.</span></div>
 
+  <div
+    className="hero-location"
+    style={{
+      // Keep your existing styles here
+    }}
+  >
+    BASED IN JEDDAH
+  </div>
+
+</div>
+</section>
         {/* 01 ABOUT */}
         <section className="section page-width" id="about">
           <SectionHeading
