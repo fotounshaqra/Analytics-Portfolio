@@ -6,7 +6,7 @@ export const profile = {
   tagline: "Turning data into decisions, and insights into impact.",
 
   introduction:
-    "Problem solver, numbers geek,  thriving at the intersection of data, business, and communication, where messy numbers and business requirements become clear insights that people can actually use.",
+    "Problem solver and numbers geek, thriving at the intersection of data, business, and communication, where messy numbers and business requirements become clear insights that people can actually use.",
 
   location: "Jeddah, Saudi Arabia",
 
@@ -17,7 +17,7 @@ export const profile = {
   cv: "/cv.pdf",
 
   about:
-    "I can write a long paragraph about my experiences and education; as well as technologies and tools I've used and am using, but instead I'll use Statistics. ",
+    "I could write a long paragraph about my experiences, education, and the technologies and tools I've used along the way. Instead, I'll keep it simple: Statistics.",
 };
 
 export const skills = [
