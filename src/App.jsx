@@ -376,7 +376,7 @@ function App() {
                     <rect x="28" y="17" width="5" height="13" rx="1" fill="var(--maroon)" />
                   </svg>
                 </div>
-                <div className="kpi-value">10+</div>
+                <div className="kpi-value">6+</div>
                 <div className="kpi-label">Dashboards Built</div>
               </article>
             </Reveal>
