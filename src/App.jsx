@@ -192,23 +192,7 @@ function App() {
               }}
             >
               BASED IN JEDDAH
-            </div>
-            <p
-              className="hero-bridge"
-              style={{
-                maxWidth: "230px",
-                margin: "1.2rem auto 0",
-                fontFamily: 'Georgia, "Times New Roman", serif',
-                fontSize: "1.05rem",
-                fontStyle: "italic",
-                lineHeight: 1.5,
-                textAlign: "center",
-                opacity: 0.82
-              }}
-            >
-              Bridging the gap between academia and industry.
-            </p>
-          </div>
+           
         </section>
 
         {/* 01 ABOUT */}
@@ -216,7 +200,7 @@ function App() {
           <SectionHeading
             number="01"
             title="About Me"
-            description="A brief introduction to my interests, background, and journey in data analytics."
+            description="Brief Introduction."
           />
 
           <Reveal>
@@ -228,11 +212,7 @@ function App() {
 
               <div className="about-highlight">
                 <span className="highlight-number">01</span>
-                <h3>Curiosity drives discovery.</h3>
-                <p>
-                  I believe meaningful insights begin with asking
-                  the right questions and understanding the data.
-                </p>
+                <h3>Bridging the gap between academia and indusstry.</h3>
               </div>
             </div>
           </Reveal>
