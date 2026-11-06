@@ -212,7 +212,7 @@ function App() {
 
               <div className="about-highlight">
                 <span className="highlight-number">01</span>
-                <h3>Bridging the gap between academia and indusstry.</h3>
+                <h3>Bridging the gap between academia and industry.</h3>
               </div>
             </div>
           </Reveal>
