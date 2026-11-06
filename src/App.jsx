@@ -187,7 +187,7 @@ function App() {
       // Keep your existing styles here
     }}
   >
-    BASED IN JEDDAH
+    BASED IN JEDDAH, SAUDI ARABIA
   </div>
 
 </div>
