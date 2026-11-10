@@ -6,7 +6,7 @@ export const profile = {
   tagline: "Turning data into decisions, and insights into impact.",
 
   introduction:
-    "Problem solver and numbers geek",
+    "Problem solver and numbers geek, thriving at the intersection of data, business, and communication.",
 
   location: "Jeddah, Saudi Arabia",
 
