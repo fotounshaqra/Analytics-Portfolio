@@ -22,20 +22,20 @@ export const profile = {
 
 export const skills = [
   {
-    category: "Programming",
-    items: ["Python", "R", "SQL"]
+    category: "Data Analytics",
+    items: ["Power BI", "Google Data Studio (Looker)", "Tableau", "Microsoft Excel"]
   },
   {
-    category: "Data Analysis",
-    items: ["Microsoft Excel (PowerQuery, VBA)"]
+    category: "Business Analytics",
+    items: ["A/B Testing", "Root Cause Analysis", "Market Research"]
   },
   {
-    category: "Business Intelligence",
-    items: ["Power BI", "Tableau", "Google Data Studio (Looker)"]
+    category: "Data Management",
+    items: ["ETL", "Power Query", "SQL"]
   },
   {
-    category: "Machine Learning",
-    items: ["Keras", "Scikit-learn", "TensorFlow"]
+    category: "Dashboards & Reporting",
+    items: ["Sales Analytics", "KPI Dashboards", "Stakeholder Communications", "Business Intelligence"]
   }
 ];
 
