@@ -35,7 +35,7 @@ export const skills = [
   },
   {
     category: "Dashboards & Reporting",
-    items: ["Sales Analytics", "KPI Dashboards", "Stakeholder Communications", "Business Intelligence"]
+    items: ["Sales Analytics", "KPI Dashboards", "Stakeholder Communication", "Business Intelligence"]
   }
 ];
 
