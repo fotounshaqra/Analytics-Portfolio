@@ -389,7 +389,7 @@ function App() {
             <SectionHeading
               number="03"
               title="Professional Experience"
-              description=" My data path."
+              description=" My data journey."
             />
 
             <div className="timeline">
@@ -439,7 +439,7 @@ function App() {
           <div className="page-width">
             <SectionHeading
               number="05"
-              title="Technical Skills"
+              title="Softwares & Programing Languages"
               description="The tools and technologies I use and learn about."
             />
 
