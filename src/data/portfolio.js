@@ -5,9 +5,9 @@ export const profile = {
 
   tagline: "Turning data into decisions, and insights into impact.",
 
-  introduction:
-    "Problem solver and numbers geek, thriving at the intersection of data, business, and communication.",
-
+ introductionBold: "Problem solver and numbers geek",
+introduction:
+  ", thriving at the intersection of data, business, and communication.",
   location: "Jeddah, Saudi Arabia",
 
   email: "shaqrafotoun@gmail.com",
