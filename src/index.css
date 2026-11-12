@@ -1046,3 +1046,11 @@ button {
   }
 
 }
+
+.about-copy .large-copy {
+  font-weight: 400;
+}
+
+.about-copy .large-copy strong {
+  font-weight: 800;
+}
