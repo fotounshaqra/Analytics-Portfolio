@@ -202,7 +202,8 @@ function App() {
           <Reveal>
             <div className="about-layout">
               <div className="about-copy">
-                <p className="large-copy">{profile.introduction}</p>
+                <p className="large-copy"><strong>{profile.introductionBold}</strong>
+                {profile.introduction}
                 <p>{profile.about}</p>
               </div>
 
