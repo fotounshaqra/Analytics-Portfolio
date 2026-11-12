@@ -200,13 +200,15 @@ function App() {
           />
 
           <Reveal>
-            <div className="about-layout">
-              <div className="about-copy">
-                <p className="large-copy"><strong>{profile.introductionBold}</strong>
-                {profile.introduction}
-                <p>{profile.about}</p>
-              </div>
+  <div className="about-layout">
+    <div className="about-copy">
+      <p className="large-copy">
+        <strong>{profile.introductionBold}</strong>
+        {profile.introduction}
+      </p>
 
+      <p>{profile.about}</p>
+    </div>
               <div className="about-highlight">
                 <span className="highlight-number"></span>
                 <h3>Bridging the gap between academia and industry.</h3>
