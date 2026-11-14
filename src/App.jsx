@@ -696,9 +696,7 @@ function App() {
           Send Message ↗
         </button>
 
-        <p className="contact-form-note">
-          This will open your default email app.
-        </p>
+       
       </form>
     </div>
   </Reveal>
