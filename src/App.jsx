@@ -596,29 +596,99 @@ function App() {
           </div>
         </section>
 
-        {/* 09 CONTACT */}
-        <section className="section contact-section" id="contact">
-          <div className="page-width">
-            <Reveal>
-              <p className="eyebrow">09 / GET IN TOUCH</p>
-              <h2>
-                Let's create something<br />
-                <span>meaningful with data.</span>
-              </h2>
-              <p className="contact-description">
-                {profile.tagline} Feel free to connect with me
-                for professional discussions and collaboration.
-              </p>
+       
+{/* 09 CONTACT */}
+<section className="section contact-section" id="contact">
+  <div className="page-width">
+    <Reveal>
+      <p className="eyebrow">09 / GET IN TOUCH</p>
 
-              <a
-                href={`mailto:${profile.email}`}
-                className="button button-primary"
-              >
-                Get In Touch <ArrowUpRight size={18} />
-              </a>
-            </Reveal>
+      <h2>
+        Let's create something<br />
+        <span>meaningful with data.</span>
+      </h2>
+
+      <p className="contact-description">
+        {profile.tagline} Feel free to connect with me
+        for professional discussions and collaboration.
+      </p>
+
+      <form
+        className="contact-form"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+      >
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="First name"
+              autoComplete="given-name"
+              required
+            />
           </div>
-        </section>
+
+          <div className="form-group">
+            <label htmlFor="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last name"
+              autoComplete="family-name"
+              required
+            />
+          </div>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            autoComplete="email"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="What would you like to discuss?"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tell me more..."
+            rows="5"
+            required
+          />
+        </div>
+
+        <button
+          type="submit"
+          className="button button-primary contact-submit"
+        >
+          Send Message <ArrowUpRight size={18} />
+        </button>
+      </form>
+    </Reveal>
+  </div>
+</section>
+
       </main>
 
       <footer className="footer page-width">
