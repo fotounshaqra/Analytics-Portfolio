@@ -171,7 +171,7 @@ function App() {
                   <Code2 />
                 </a>
 
-                <a href={`mailto:${profile.email}`} aria-label="Email">
+                <a href="#contact"`>
                   <Mail />
                 </a>
               </div>
