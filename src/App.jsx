@@ -597,47 +597,61 @@ function App() {
           </div>
         </section>
 
-       
+
 {/* 09 CONTACT */}
-<section className="section contact-section" id="contact">
-  <div className="page-width">
-    <Reveal>
-      <p className="eyebrow">09 / GET IN TOUCH</p>
+<section className="section page-width" id="contact">
+  <SectionHeading
+    number="09"
+    title="Get In Touch"
+  />
 
-      <h2>
-        Let's create something<br />
-        <span>meaningful with data.</span>
-      </h2>
+  <Reveal>
+    <div className="contact-form-wrapper">
+      <h3>Let's connect.</h3>
 
-      <p className="contact-description">
-        {profile.tagline} Feel free to connect with me
-        for professional discussions and collaboration.
+      <p className="contact-form-description">
+        Have an opportunity, a question, or just want
+        to say hello? I'd love to hear from you.
       </p>
 
       <form
         className="contact-form"
-        action="https://formspree.io/f/YOUR_FORM_ID"
-        method="POST"
+        onSubmit={(event) => {
+          event.preventDefault();
+
+          const data = new FormData(event.currentTarget);
+
+          const firstName = data.get("firstName");
+          const lastName = data.get("lastName");
+          const email = data.get("email");
+          const subject = data.get("subject");
+          const message = data.get("message");
+
+          const body = `${message}\n\nBest regards,\n${firstName} ${lastName}\nEmail: ${email}`;
+
+          window.location.href =
+            `mailto:${profile.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        }}
       >
-        <div className="form-row">
-          <div className="form-group">
+        <div className="contact-form-row">
+          <div className="contact-field">
             <label htmlFor="firstName">First Name</label>
             <input
-              type="text"
               id="firstName"
               name="firstName"
+              type="text"
               placeholder="First name"
               autoComplete="given-name"
               required
             />
           </div>
 
-          <div className="form-group">
+          <div className="contact-field">
             <label htmlFor="lastName">Last Name</label>
             <input
-              type="text"
               id="lastName"
               name="lastName"
+              type="text"
               placeholder="Last name"
               autoComplete="family-name"
               required
@@ -645,50 +659,52 @@ function App() {
           </div>
         </div>
 
-        <div className="form-group">
+        <div className="contact-field">
           <label htmlFor="email">Email</label>
           <input
-            type="email"
             id="email"
             name="email"
+            type="email"
             placeholder="you@example.com"
             autoComplete="email"
             required
           />
         </div>
 
-        <div className="form-group">
+        <div className="contact-field">
           <label htmlFor="subject">Subject</label>
           <input
-            type="text"
             id="subject"
             name="subject"
+            type="text"
             placeholder="What would you like to discuss?"
             required
           />
         </div>
 
-        <div className="form-group">
+        <div className="contact-field">
           <label htmlFor="message">Message</label>
           <textarea
             id="message"
             name="message"
             placeholder="Tell me more..."
-            rows="5"
+            rows={5}
             required
           />
         </div>
 
-        <button
-          type="submit"
-          className="button button-primary contact-submit"
-        >
-          Send Message <ArrowUpRight size={18} />
+        <button type="submit" className="contact-send">
+          Send Message ↗
         </button>
+
+        <p className="contact-form-note">
+          This will open your default email app.
+        </p>
       </form>
-    </Reveal>
-  </div>
+    </div>
+  </Reveal>
 </section>
+
 
       </main>
 
