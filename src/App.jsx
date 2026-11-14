@@ -171,7 +171,9 @@ function App() {
                   <Code2 />
                 </a>
 
-                <a href="#contact"`>
+               <a href="#contact"`>
+  <Mail />
+</a>
                   <Mail />
                 </a>
               </div>
