@@ -609,11 +609,10 @@ function App() {
     <div className="contact-form-wrapper">
       <h3>Let's connect.</h3>
 
-      <p className="contact-form-description">
-        Have an opportunity, a question, or just want
-        to say hello? I'd love to hear from you.
-      </p>
-
+     <p className="contact-form-description">
+  Feel free to connect with me for professional
+  discussions and collaboration.
+</p>
       <form
         className="contact-form"
         onSubmit={(event) => {
