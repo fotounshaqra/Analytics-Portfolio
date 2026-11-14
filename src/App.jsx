@@ -198,24 +198,25 @@ function App() {
             number="01"
             title="About Me"
           />
+<Reveal>
+  <div className="about-layout">
+    <div className="about-copy">
+      <p className="large-copy">
+        <strong>{profile.introductionBold}</strong>
+        <span className="intro-normal">
+          {profile.introduction}
+        </span>
+      </p>
 
-          <Reveal>
- <div className="about-copy">
-  <p className="large-copy">
-    <strong>{profile.introductionBold}</strong>
-    <span className="intro-normal">
-      {profile.introduction}
-    </span>
-  </p>
+      <p>{profile.about}</p>
+    </div>
 
-  <p>{profile.about}</p>
-</div>
-              <div className="about-highlight">
-                <span className="highlight-number"></span>
-                <h3>Bridging the gap between academia and industry.</h3>
-              </div>
-            </div>
-          </Reveal>
+    <div className="about-highlight">
+      <span className="highlight-number"></span>
+      <h3>Bridging the gap between academia and industry.</h3>
+    </div>
+  </div>
+</Reveal>
 
           {/* Decorative line-chart motif leading into Statistics */}
           <div
