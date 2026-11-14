@@ -607,14 +607,14 @@ function App() {
     title="Get In Touch"
   />
 
-  <Reveal>
-    <div className="contact-form-wrapper">
-      <h3>Let's connect.</h3>
+<Reveal>
+  <div className="contact-form-wrapper">
+    <h3>Let's connect.</h3>
 
-     <p className="contact-form-description">
-  Feel free to connect with me for professional
-  discussions and collaboration.
-</p>
+    <p className="contact-form-description">
+      Feel free to connect with me for professional
+      discussions and collaboration.
+    </p>
       <form
         className="contact-form"
         onSubmit={(event) => {
