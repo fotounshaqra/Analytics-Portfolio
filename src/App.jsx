@@ -693,7 +693,7 @@ function App() {
         </div>
 
         <button type="submit" className="contact-send">
-          Send Message ↗
+          Send Message 
         </button>
 
        
