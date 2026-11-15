@@ -316,47 +316,25 @@ function App() {
                 <div className="kpi-label">Rows Analyzed</div>
               </article>
             </Reveal>
-
-            <Reveal delay={0.2}>
-              <article className="kpi-card">
-                <div className="kpi-anim">
-                  <svg viewBox="0 0 44 44" width="44" height="44">
-                    <circle
-                      cx="22" cy="22" r="16"
-                      fill="none"
-                      stroke="var(--line)"
-                      strokeWidth="8"
-                    />
-                    <circle
-                      cx="22" cy="22" r="16"
-                      fill="none"
-                      stroke="var(--purple)"
-                      strokeWidth="8"
-                      strokeDasharray="60 41"
-                      transform="rotate(-90 22 22)"
-                    >
-                      <animate
-                        attributeName="stroke-dasharray"
-                        values="60 41;40 61;60 41"
-                        dur="3s"
-                        repeatCount="indefinite"
-                      />
-                    </circle>
-                    <path
-                      d="M22 13 L8 29 M22 13 L36 29 M8 34 L36 34"
-                      fill="none"
-                      stroke="var(--navy)"
-                      strokeWidth="1.5"
-                    />
-                    <circle cx="22" cy="13" r="2.5" fill="var(--maroon)" />
-                    <circle cx="8" cy="29" r="2.5" fill="var(--purple)" />
-                    <circle cx="36" cy="29" r="2.5" fill="var(--lavender)" />
-                  </svg>
-                </div>
-                <div className="kpi-value">4+</div>
-                <div className="kpi-label">Data Pipelines</div>
-              </article>
-            </Reveal>
+<Reveal delay={0.2}>
+  <article className="kpi-card">
+    <div className="kpi-anim">
+      <svg viewBox="0 0 44 44" width="44" height="44">
+        <path
+          d="M22 13 L8 29 M22 13 L36 29 M8 34 L36 34"
+          fill="none"
+          stroke="var(--navy)"
+          strokeWidth="1.5"
+        />
+        <circle cx="22" cy="13" r="2.5" fill="var(--maroon)" />
+        <circle cx="8" cy="29" r="2.5" fill="var(--purple)" />
+        <circle cx="36" cy="29" r="2.5" fill="var(--lavender)" />
+      </svg>
+    </div>
+    <div className="kpi-value">4+</div>
+    <div className="kpi-label">Data Pipelines</div>
+  </article>
+</Reveal> 
 
             <Reveal delay={0.3}>
               <article className="kpi-card">
