@@ -1214,3 +1214,171 @@ button {
     font-size: 24px;
   }
 }
+/* ==============================
+   HERO MATHEMATICAL OVERLAY
+============================== */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+}
+
+.math-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Subtle grid background */
+
+.math-grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      to right,
+      var(--purple) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--purple) 1px,
+      transparent 1px
+    );
+
+  background-size: 45px 45px;
+  opacity: 0.045;
+
+  mask-image: radial-gradient(
+    ellipse at center,
+    black 10%,
+    transparent 85%
+  );
+}
+
+/* Floating mathematical formulas */
+
+.math-formula {
+  position: absolute;
+  font-family: "Courier New", monospace;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--purple);
+  opacity: 0.20;
+  white-space: nowrap;
+  animation: formulaFloat 8s ease-in-out infinite;
+}
+
+.formula-1 {
+  top: 8%;
+  left: 5%;
+}
+
+.formula-2 {
+  top: 12%;
+  right: 12%;
+  animation-delay: -2s;
+}
+
+.formula-3 {
+  top: 34%;
+  right: 3%;
+  animation-delay: -4s;
+}
+
+.formula-4 {
+  bottom: 18%;
+  right: 22%;
+  animation-delay: -1s;
+}
+
+.formula-5 {
+  top: 48%;
+  left: 48%;
+  font-size: 22px;
+  animation-delay: -3s;
+}
+
+.formula-6 {
+  bottom: 8%;
+  left: 8%;
+  animation-delay: -5s;
+}
+
+.formula-7 {
+  bottom: 3%;
+  left: 38%;
+  font-size: 12px;
+  animation-delay: -2s;
+}
+
+.formula-8 {
+  top: 6%;
+  left: 45%;
+  font-size: 12px;
+  animation-delay: -6s;
+}
+
+.formula-9 {
+  bottom: 28%;
+  right: 5%;
+  animation-delay: -3s;
+}
+
+.formula-10 {
+  top: 24%;
+  left: 58%;
+  animation-delay: -4s;
+}
+
+/* Gentle floating animation */
+
+@keyframes formulaFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Dark mode */
+
+[data-theme="dark"] .math-formula {
+  opacity: 0.25;
+}
+
+[data-theme="dark"] .math-grid {
+  opacity: 0.07;
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 768px) {
+  .math-formula {
+    font-size: 11px;
+    opacity: 0.12;
+  }
+
+  .formula-5,
+  .formula-7,
+  .formula-10 {
+    display: none;
+  }
+
+  .math-grid {
+    background-size: 30px 30px;
+  }
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .math-formula {
+    animation: none;
+  }
+}
