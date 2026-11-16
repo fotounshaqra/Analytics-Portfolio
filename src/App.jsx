@@ -122,6 +122,41 @@ function App() {
       <main>
         {/* HERO */}
         <section className="hero page-width" id="home">
+          <div className="math-overlay" aria-hidden="true">
+  <div className="math-grid" />
+
+  <span className="math-formula formula-1">
+    Σ(xᵢ − μ)²
+  </span>
+
+  <span className="math-formula formula-2">
+    y = β₀ + β₁x
+  </span>
+
+  <span className="math-formula formula-3">
+    P(A|B)
+  </span>
+
+  <span className="math-formula formula-5">
+    0.99
+  </span>
+
+  <span className="math-formula formula-6">
+    σ² = Var(X)
+  </span>
+
+  <span className="math-formula formula-7">
+    SELECT * FROM data;
+  </span>
+
+  <span className="math-formula formula-8">
+    0101 1010
+  </span>
+
+  <span className="math-formula formula-9">
+    n → ∞
+  </span>
+</div>
           <div className="hero-content">
             <Reveal>
               <p className="eyebrow">
