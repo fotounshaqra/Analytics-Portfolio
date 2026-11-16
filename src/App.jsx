@@ -123,7 +123,6 @@ function App() {
         {/* HERO */}
         <section className="hero page-width" id="home">
           <div className="math-overlay" aria-hidden="true">
-  <div className="math-grid" />
 
   <span className="math-formula formula-1">
     Σ(xᵢ − μ)²
