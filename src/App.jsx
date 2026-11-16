@@ -149,7 +149,7 @@ function App() {
   </span>
 
   <span className="math-formula formula-8">
-    0101 1010
+    0,1
   </span>
 
   <span className="math-formula formula-9">
