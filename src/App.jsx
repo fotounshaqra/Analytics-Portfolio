@@ -36,14 +36,18 @@ const navItems = [
   ["09", "Contact", "#contact"]
 ];
 
+
 function Reveal({ children, delay = 0 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.90 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true, amount: 0.2 }}
+      initial={{ opacity: 0, y: 60, scale: 0.96 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{
+        once: true,
+        amount: 0.15,
+      }}
       transition={{
-        duration: 0.6,
+        duration: 0.9,
         delay,
         ease: [0.22, 1, 0.36, 1],
       }}
@@ -53,17 +57,29 @@ function Reveal({ children, delay = 0 }) {
   );
 }
 
+
+
 function SectionHeading({ number, title, description }) {
   return (
-    <div className="section-heading">
+    <motion.div
+      className="section-heading"
+      initial={{ opacity: 0, y: 45 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{
+        duration: 0.85,
+        ease: [0.22, 1, 0.36, 1],
+      }}
+    >
       <p className="eyebrow">{number} / PORTFOLIO</p>
       <h2>{title}</h2>
       {description && (
         <p className="section-description">{description}</p>
       )}
-    </div>
+    </motion.div>
   );
 }
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
