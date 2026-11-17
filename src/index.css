@@ -1381,3 +1381,70 @@ button {
     animation: none;
   }
 }
+
+
+/* Floating Experience Pie Chart */
+
+#experience {
+  position: relative;
+  isolation: isolate;
+}
+
+.experience-pie-overlay {
+  position: absolute;
+  top: 28%;
+  right: 3%;
+  width: clamp(180px, 23vw, 300px);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.experience-pie-overlay svg {
+  width: 100%;
+  overflow: visible;
+  filter: drop-shadow(
+    0 15px 25px rgba(110, 55, 95, 0.16)
+  );
+}
+
+.experience-pie-legend {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.experience-pie-legend span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.experience-pie-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.fmcg-color {
+  background: #894969;
+}
+
+.retail-color {
+  background: #B99AD6;
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+  .experience-pie-overlay {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: min(270px, 80%);
+    margin: 36px auto 0;
+  }
+}
+
