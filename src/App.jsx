@@ -417,36 +417,39 @@ function App() {
           </div>
         </section>
 
-        {/* 03 EXPERIENCE */}
-        <section className="section section-tinted" id="experience">
-          <div className="page-width">
-            <SectionHeading
-              number="03"
-              title="Professional Experience"
-              description=" My data journey."
-            />
+     
+{/* 03 EXPERIENCE */}
+<section className="section section-tinted" id="experience">
+  <div className="page-width">
+    <SectionHeading
+      number="03"
+      title="Professional Experience"
+      description="My data journey."
+    />
 
-            <div className="timeline">
-              {experience.map((item, index) => (
-                <Reveal key={index}>
-                  <article className="timeline-item">
-                    <div className="experience-content">
-                      <div className="experience-text">
-                        <p className="eyebrow">{item.period}</p>
-                        <h3>{item.title}</h3>
-                        <p className="organization">{item.organization}</p>
-                        {item.description && <p>{item.description}</p>}
-                      </div>
+    <div className="experience-layout">
+      <div className="timeline">
+        {experience.map((item, index) => (
+          <Reveal key={index}>
+            <article className="timeline-item">
+              <div className="experience-content">
+                <div className="experience-text">
+                  <p className="eyebrow">{item.period}</p>
+                  <h3>{item.title}</h3>
+                  <p className="organization">{item.organization}</p>
+                  {item.description && <p>{item.description}</p>}
+                </div>
+              </div>
+            </article>
+          </Reveal>
+        ))}
+      </div>
 
-                    </div>
-                  </article>
-                </Reveal>
-              ))}
-            </div>
-          </div>
+      <ExperiencePie />
+    </div>
+  </div>
+</section>
 
-           <ExperiencePie />
-        </section>
 
         {/* 04 EDUCATION */}
         <section className="section page-width" id="education">
