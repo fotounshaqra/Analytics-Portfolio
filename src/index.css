@@ -1481,3 +1481,19 @@ html {
     scroll-behavior: auto;
   }
 }
+
+/* Mathematical equations — Light Mode */
+
+:root:not([data-theme="dark"]) .math-formula {
+  color: #75466f;
+  opacity: 0.28;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(117, 70, 111, 0.08);
+}
+
+/* Preserve Dark Mode */
+
+[data-theme="dark"] .math-formula {
+  color: #c9a8db;
+  opacity: 0.18;
+}
