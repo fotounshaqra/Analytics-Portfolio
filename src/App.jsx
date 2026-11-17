@@ -428,6 +428,8 @@ function App() {
               ))}
             </div>
           </div>
+
+           <ExperiencePie />
         </section>
 
         {/* 04 EDUCATION */}
