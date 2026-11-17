@@ -1383,35 +1383,47 @@ button {
 }
 
 
-/* Floating Experience Pie Chart */
 
-#experience {
-  position: relative;
-  isolation: isolate;
+/* Experience timeline + floating pie chart */
+
+.experience-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 48px;
+  align-items: center;
+}
+
+.experience-layout .timeline {
+  min-width: 0;
 }
 
 .experience-pie-overlay {
-  position: absolute;
-  top: 28%;
-  right: 3%;
-  width: clamp(180px, 23vw, 300px);
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  top: auto;
+  right: auto;
   z-index: 2;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .experience-pie-overlay svg {
+  display: block;
   width: 100%;
+  height: auto;
   overflow: visible;
   filter: drop-shadow(
-    0 15px 25px rgba(110, 55, 95, 0.16)
+    0 12px 22px rgba(110, 55, 95, 0.12)
   );
 }
 
 .experience-pie-legend {
   display: flex;
   justify-content: center;
-  gap: 22px;
-  margin-top: 8px;
+  align-items: center;
+  gap: 24px;
+  margin-top: 12px;
   font-size: 13px;
 }
 
@@ -1435,6 +1447,18 @@ button {
 .retail-color {
   background: #B99AD6;
 }
+
+@media (max-width: 900px) {
+  .experience-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .experience-pie-overlay {
+    max-width: 260px;
+  }
+}
+
 
 /* Responsive layout */
 
