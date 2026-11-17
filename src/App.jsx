@@ -480,17 +480,13 @@ function App() {
             />
 
             <div className="skills-grid">
-              {skills.map((group, index) => (
-                <article className="skill-card" key={group.category}>
-                  <span className="card-number">0{index + 1}</span>
-                  <h3>{group.category}</h3>
-                  <div className="skill-tags">
-                    {group.items.map(item => (
-                      <span key={item}>{item}</span>
-                    ))}
-                  </div>
-                </article>
-              ))}
+             {skills.map((group, index) => (
+  <Reveal key={group.category} delay={index * 0.1}>
+    <article className="skill-card">
+      {/* Keep your existing card contents */}
+    </article>
+  </Reveal>
+))}
             </div>
           </div>
         </section>
