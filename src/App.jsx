@@ -428,7 +428,7 @@ function App() {
       description="My data journey."
     />
 
-    <div className="experience-layout">
+    <div className="experience-layout" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "48px", alignItems: "center", width: "100%" }}>
       <div className="timeline">
         {experience.map((item, index) => (
           <Reveal key={index}>
@@ -446,20 +446,7 @@ function App() {
         ))}
       </div>
 
- <div
-  style={{
-    width: "250px",
-    height: "250px",
-    minWidth: "250px",
-    background: "#894969",
-    border: "5px solid #B99AD6",
-    borderRadius: "50%",
-    position: "relative",
-    zIndex: 999,
-  }}
->
-  PIE TEST
-</div>
+      <ExperiencePie />
 </div>
 </div>
 </section>
