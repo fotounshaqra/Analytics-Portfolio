@@ -550,8 +550,11 @@ function App() {
                 </article>
               </Reveal>
             ))}
-          </div>
-        </section>
+       ))}
+</div>
+</div> {/* closes page-width */}
+
+</section>
 
         {/* 07 PUBLICATIONS */}
         <section className="section section-tinted" id="publications">
