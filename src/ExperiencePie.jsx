@@ -4,60 +4,70 @@ import { motion } from "framer-motion";
 export default function ExperiencePie() {
   return (
     <motion.div
-      className="experience-pie-overlay"
-      initial={{
-        opacity: 0,
-        scale: 0.6,
-        rotate: -90,
-      }}
-      whileInView={{
-        opacity: 1,
-        scale: 1,
-        rotate: 0,
-      }}
-      viewport={{ once: true, amount: 0.2 }}
+      initial={{ opacity: 0, scale: 0.7, rotate: -45 }}
+      animate={{ opacity: 1, scale: 1, rotate: 0 }}
       transition={{
-        duration: 1.4,
-        ease: [0.22, 1, 0.36, 1],
+        duration: 1.2,
+        ease: "easeOut",
+      }}
+      style={{
+        width: "100%",
+        maxWidth: "280px",
+        margin: "30px auto",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        position: "relative",
+        opacity: 1,
+        visibility: "visible",
+        zIndex: 10,
       }}
     >
-      <svg
-        viewBox="0 0 240 240"
-        role="img"
-        aria-label="Industry experience: FMCG and Retail"
-      >
-        <path
-          d="M120 120 L120 20 A100 100 0 1 1 20 120 Z"
-          fill="#894969"
-        >
-          <title>FMCG</title>
-        </path>
+      <div
+        style={{
+          width: "240px",
+          height: "240px",
+          borderRadius: "50%",
+          background:
+            "conic-gradient(#894969 0% 75%, #B99AD6 75% 100%)",
+          flexShrink: 0,
+        }}
+      />
 
-        <path
-          d="M120 120 L20 120 A100 100 0 0 1 120 20 Z"
-          fill="#B99AD6"
-        >
-          <title>Retail</title>
-        </path>
-      </svg>
-
-      <motion.div
-        className="experience-pie-legend"
-        initial={{ opacity: 0, y: 15 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.7, duration: 0.6 }}
+      <div
+        style={{
+          display: "flex",
+          gap: "24px",
+          justifyContent: "center",
+          marginTop: "20px",
+          fontSize: "14px",
+        }}
       >
-        <span>
-          <i className="fmcg-color" />
+        <span style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <span
+            style={{
+              width: "11px",
+              height: "11px",
+              borderRadius: "50%",
+              background: "#894969",
+            }}
+          />
           FMCG
         </span>
 
-        <span>
-          <i className="retail-color" />
+        <span style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <span
+            style={{
+              width: "11px",
+              height: "11px",
+              borderRadius: "50%",
+              background: "#B99AD6",
+            }}
+          />
           Retail
         </span>
-      </motion.div>
+      </div>
     </motion.div>
   );
 }
+
