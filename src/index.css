@@ -1479,3 +1479,21 @@ html {
     margin: 0 auto;
   }
 }
+.large-copy {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.large-copy strong,
+.large-copy .intro-normal {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.large-copy strong {
+  font-weight: 700;
+}
+
+.large-copy .intro-normal {
+  font-weight: 400;
+}
