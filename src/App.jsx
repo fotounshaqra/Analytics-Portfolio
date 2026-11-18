@@ -428,7 +428,7 @@ function App() {
       description="My data journey."
     />
 
-    <div className="experience-layout" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "48px", alignItems: "center", width: "100%" }}>
+    <div className="experience-layout">
       <div className="timeline">
         {experience.map((item, index) => (
           <Reveal key={index}>
