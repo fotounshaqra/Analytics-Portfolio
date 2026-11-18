@@ -446,7 +446,20 @@ function App() {
         ))}
       </div>
 
-     <ExperiencePie />
+ <div
+  style={{
+    width: "250px",
+    height: "250px",
+    minWidth: "250px",
+    background: "#894969",
+    border: "5px solid #B99AD6",
+    borderRadius: "50%",
+    position: "relative",
+    zIndex: 999,
+  }}
+>
+  PIE TEST
+</div>
 </div>
 </div>
 </section>
