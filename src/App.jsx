@@ -483,22 +483,27 @@ function App() {
               description="The tools and technologies I use and learn about."
             />
 
-            <div className="skills-grid">
-             {skills.map((group, index) => (
-  <Reveal key={group.category} delay={index * 0.1}>
-    <article className="skill-card">
-      {<span className="card-number">0{index + 1}</span>
-<h3>{group.category}</h3>
-<div className="skill-tags">
-  {group.items.map((item) => (
-    <span key={item}>{item}</span>
+          
+<div className="skills-grid">
+  {skills.map((group, index) => (
+    <Reveal key={group.category} delay={index * 0.1}>
+      <article className="skill-card">
+        <span className="card-number">
+          0{index + 1}
+        </span>
+
+        <h3>{group.category}</h3>
+
+        <div className="skill-tags">
+          {group.items.map((item) => (
+            <span key={item}>{item}</span>
+          ))}
+        </div>
+      </article>
+    </Reveal>
   ))}
-</div>}
-    </article>
-  </Reveal>
-))}
-            </div>
-          </div>
+</div>
+
         </section>
 
         {/* 06 PROJECTS */}
