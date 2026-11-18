@@ -421,35 +421,37 @@ function App() {
 {/* 03 EXPERIENCE */}
 <section className="section section-tinted" id="experience">
   <div className="page-width">
+
     <SectionHeading
       number="03"
       title="Professional Experience"
       description="My data journey."
     />
 
- <div className="experience-layout">
-  <div className="timeline">
-    {experience.map((item, index) => (
-      <Reveal key={index}>
-        <article className="timeline-item">
-          <div className="experience-content">
-            <div className="experience-text">
-              <p className="eyebrow">{item.period}</p>
-              <h3>{item.title}</h3>
-              <p className="organization">{item.organization}</p>
-              {item.description && <p>{item.description}</p>}
-            </div>
-          </div>
-        </article>
-      </Reveal>
-    ))}
+    <div className="experience-layout">
+      <div className="timeline">
+        {experience.map((item, index) => (
+          <Reveal key={index}>
+            <article className="timeline-item">
+              <div className="experience-content">
+                <div className="experience-text">
+                  <p className="eyebrow">{item.period}</p>
+                  <h3>{item.title}</h3>
+                  <p className="organization">{item.organization}</p>
+                  {item.description && <p>{item.description}</p>}
+                </div>
+              </div>
+            </article>
+          </Reveal>
+        ))}
+      </div>
+
+      <ExperiencePie />
+    </div>
+
   </div>
-
-  <ExperiencePie />
-</div>
 </section>
-
-
+        
         {/* 04 EDUCATION */}
         <section className="section page-width" id="education">
           <SectionHeading
@@ -485,7 +487,13 @@ function App() {
              {skills.map((group, index) => (
   <Reveal key={group.category} delay={index * 0.1}>
     <article className="skill-card">
-      {/* Keep your existing card contents */}
+      {<span className="card-number">0{index + 1}</span>
+<h3>{group.category}</h3>
+<div className="skill-tags">
+  {group.items.map((item) => (
+    <span key={item}>{item}</span>
+  ))}
+</div>}
     </article>
   </Reveal>
 ))}
