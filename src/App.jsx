@@ -499,6 +499,7 @@ function App() {
     </Reveal>
   ))}
 </div>
+          </div> {/* closes Skills page-width */}
 
         </section>
 
@@ -550,9 +551,7 @@ function App() {
                 </article>
               </Reveal>
             ))}
-       ))}
 </div>
-</div> {/* closes page-width */}
 
 </section>
 
