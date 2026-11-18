@@ -446,11 +446,11 @@ function App() {
         ))}
       </div>
 
-      <ExperiencePie />
-    </div>
-
-  </div>
+     <ExperiencePie />
+</div>
+</div>
 </section>
+
         
         {/* 04 EDUCATION */}
         <section className="section page-width" id="education">
