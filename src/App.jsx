@@ -1,4 +1,4 @@
-import ExperiencePie from "./components/ExperiencePie";
+
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
@@ -445,8 +445,6 @@ function App() {
           </Reveal>
         ))}
       </div>
-
-      <ExperiencePie />
 </div>
 </div>
 </section>
