@@ -545,9 +545,52 @@ function App() {
                     )}
                   </div>
 
-                  <div className="project-symbol">
-                    <BarChart3 size={38} />
-                  </div>
+                 <div className="project-preview">
+  {(() => {
+    const title = project.title.toLowerCase();
+
+    let image = null;
+    let caption = "";
+
+    if (title.includes("epos")) {
+      image =
+        "https://public.tableau.com/static/images/Sa/SaudiArabiaEPOSDashboard/EPOSDahboard/1.png";
+      caption = "Saudi Arabia EPOS";
+    } else if (
+      title.includes("restaurant") ||
+      title.includes("taco") ||
+      title.includes("sales dashboard")
+    ) {
+      image =
+        "https://public.tableau.com/static/images/Le/LetsTacoboutSales/Dashboard1/1.png";
+      caption = "Let's Taco 'bout Sales";
+    }
+
+    if (!image) return null;
+
+    return (
+      <a
+        className="project-polaroid"
+        href={project.link || "#projects"}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={`View ${caption} dashboard`}
+      >
+        <div className="polaroid-photo">
+          <img
+            src={image}
+            alt={`${caption} dashboard preview`}
+            loading="lazy"
+          />
+        </div>
+
+        <span className="polaroid-caption">
+          {caption}
+        </span>
+      </a>
+    );
+  })()}
+</div>
                 </article>
               </Reveal>
             ))}
