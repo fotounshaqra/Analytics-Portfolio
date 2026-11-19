@@ -1656,4 +1656,15 @@ html {
     width: 160px;
   }
 }
+/* Tilt all project Polaroids to the RIGHT */
 
+.project-polaroid,
+.project-row:nth-child(even) .project-polaroid {
+  transform: rotate(5deg);
+}
+
+/* Straighten and lift on hover */
+.project-polaroid:hover,
+.project-row:nth-child(even) .project-polaroid:hover {
+  transform: rotate(0deg) translateY(-8px) scale(1.04);
+}
