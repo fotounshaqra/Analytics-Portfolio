@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
@@ -80,6 +79,39 @@ function SectionHeading({ number, title, description }) {
   );
 }
 
+
+
+// Self-contained experience chart: no separate component import required.
+function ExperiencePie() {
+  return (
+    <motion.aside
+      className="experience-pie-overlay"
+      aria-label="Industry experience: FMCG and Retail"
+      initial={{ opacity: 0, scale: 0.75, rotate: -25 }}
+      whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+      style={{ flex: "0 1 260px", width: "100%", maxWidth: 260, margin: "20px auto", textAlign: "center" }}
+    >
+      <svg viewBox="0 0 240 240" role="img" aria-label="Illustration of FMCG and Retail experience" style={{ display: "block", width: "100%", height: "auto" }}>
+        <path d="M120 120 L120 20 A100 100 0 1 1 20 120 Z" fill="#894969">
+          <title>FMCG</title>
+        </path>
+        <path d="M120 120 L20 120 A100 100 0 0 1 120 20 Z" fill="#B99AD6">
+          <title>Retail</title>
+        </path>
+      </svg>
+      <div className="experience-pie-legend" style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: 18, marginTop: 12, fontSize: 13 }}>
+        <span style={{ display: "inline-flex", alignItems: "center", gap: 7 }}>
+          <span aria-hidden="true" style={{ width: 11, height: 11, borderRadius: "50%", background: "#894969" }} /> FMCG
+        </span>
+        <span style={{ display: "inline-flex", alignItems: "center", gap: 7 }}>
+          <span aria-hidden="true" style={{ width: 11, height: 11, borderRadius: "50%", background: "#B99AD6" }} /> Retail
+        </span>
+      </div>
+    </motion.aside>
+  );
+}
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -428,8 +460,8 @@ function App() {
       description="My data journey."
     />
 
-    <div className="experience-layout">
-      <div className="timeline">
+    <div className="experience-layout" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "32px" }}>
+      <div className="timeline" style={{ flex: "1 1 440px", minWidth: 0 }}>
         {experience.map((item, index) => (
           <Reveal key={index}>
             <article className="timeline-item">
@@ -445,6 +477,8 @@ function App() {
           </Reveal>
         ))}
       </div>
+
+      <ExperiencePie />
 </div>
 </div>
 </section>
