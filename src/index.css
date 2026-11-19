@@ -1671,5 +1671,5 @@ html {
 /* Move Polaroids inward from the right edge */
 
 .project-preview {
-  transform: translateX(-70px);
+  transform: translateX(-60px);
 }
