@@ -59,6 +59,18 @@ function Reveal({ children, delay = 0 }) {
 
 
 function SectionHeading({ number, title, description }) {
+  const sectionNames = {
+    "01": "ABOUT",
+    "02": "STATISTICS",
+    "03": "EXPERIENCE",
+    "04": "EDUCATION",
+    "05": "SKILLS",
+    "06": "PROJECTS",
+    "07": "PUBLICATIONS",
+    "08": "CERTIFICATIONS",
+    "09": "CONTACT",
+  };
+
   return (
     <motion.div
       className="section-heading"
@@ -70,26 +82,14 @@ function SectionHeading({ number, title, description }) {
         ease: [0.22, 1, 0.36, 1],
       }}
     >
-      <p className="eyebrow">
-  {number} / {
-    {
-      "01": "ABOUT",
-      "02": "STATISTICS",
-      "03": "EXPERIENCE",
-      "04": "EDUCATION",
-      "05": "SKILLS",
-      "06": "PROJECTS",
-      "07": "PUBLICATIONS",
-      "08": "CERTIFICATIONS",
-      "09": "CONTACT"
-    }[number]
-  }
-</p>
+      <p className="eyebrow">{number} / {sectionNames[number] || "PORTFOLIO"}</p>
+      <h2>{title}</h2>
+      {description && (
+        <p className="section-description">{description}</p>
       )}
     </motion.div>
   );
 }
-
 
 
 // Animated experience pie chart — self-contained, no additional imports.
