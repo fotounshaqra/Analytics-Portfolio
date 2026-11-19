@@ -1668,3 +1668,8 @@ html {
 .project-row:nth-child(even) .project-polaroid:hover {
   transform: rotate(0deg) translateY(-8px) scale(1.04);
 }
+/* Move Polaroids inward from the right edge */
+
+.project-preview {
+  transform: translateX(-40px);
+}
