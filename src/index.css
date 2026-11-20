@@ -1673,3 +1673,9 @@ html {
 .project-preview {
   transform: translateX(-60px);
 }
+/* Adjust Polaroid positioning on mobile */
+@media (max-width: 768px) {
+  .project-preview {
+    transform: translateX(15px);
+  }
+}
