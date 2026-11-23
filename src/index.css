@@ -1678,4 +1678,12 @@ html {
   .project-preview {
     transform: translateX(15px);
   }
+   .experience-pie-title {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0 0 20px;
+  color: var(--text-primary, inherit);
+}
 }
