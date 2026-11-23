@@ -108,6 +108,16 @@ function ExperiencePie() {
       viewport={{ once: true, amount: 0.25 }}
       style={{ flex: "0 1 260px", width: "100%", maxWidth: 260, margin: "20px auto", textAlign: "center" }}
     >
+      <motion.h3
+  className="experience-pie-title"
+  variants={{
+    hidden: { opacity: 0, y: 12 },
+    visible: { opacity: 1, y: 0 }
+  }}
+  transition={{ duration: 0.6 }}
+>
+  Sectors I've Worked In
+</motion.h3>
       <motion.svg
         viewBox="0 0 240 240"
         role="img"
